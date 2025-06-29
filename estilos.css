@@ -1,0 +1,67 @@
+html body{
+    background-color: #1A1A1D;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.titulo{
+    color: rgb(88, 88, 88);
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.8em;
+    font-style: italic;
+}
+
+.gifi{
+    clip-path: inset(50px 410px 120px 50px);
+    opacity: 0.4;
+    transform: scale(1.5);
+}
+
+.animacion{
+    padding-left: 530px;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 40px;
+    object-fit: cover;
+}
+
+button{
+    width: 500px;
+    height: 70px;
+    background-color: #6A1E55;
+    color: white;
+    border: #6A1E55;
+    border-radius: 10px;
+    transition: 0.3s;
+
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0);
+    background-color: #421435;
+    transition: 0.3s;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    margin-left: 200px;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.quicksand{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-size: 2em;
+}
+

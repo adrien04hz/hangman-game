@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos2.css">
+        <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <title>Ahorcado</title>
+
+    </head>
+    <body>
+        <!-- Button trigger modal -->
+        <button type="button" id="leer" class="quicksand4 rounded-4" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Info">
+            ⓘ
+        </button>
+
+        <a href="./index.html"><button id="leer1" class="quicksand4 rounded-4" title="Menú"> ➜ </button></a>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modalito">
+                <div class="modal-content" id="modalito">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Instrucciones</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Las reglas son simples, adivinar la palabra de modo que la fantasmita no desaparezca. Cada intento fallido reduce 10 puntos de vida, si la vida llega a cero, los puntos acumulados se verán afectados, reiniciando la cuenta.
+                        </p>
+
+                        <p>
+                            Llega a acumular 10 puntos sin morir y ganarás. No te preocupes, puedes guardar la partida.
+                        </p>
+
+                        <p>
+                            ¡Suerte! Todo está en tus manos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="puntuacion">
+            <div class="cuenta">
+                <p id="cuenta" class="quicksand2">Puntaje: 0</p>
+            </div>
+
+            <div class="error">
+                <p id="intentos" class="quicksand2">Errores: 0</p>
+            </div>
+        </div>
+
+        <div class="juego">
+            <div class="fantasma-vida">
+                <div class="vida">
+                    <div class="progress" role="progressbar" aria-label="Success example" aria-valuemin="0" aria-valuemax="100">
+                            <div id="hp" class="progress-bar bg-success" style="width: 100%">50HP</div>
+                    </div>
+                    
+                </div>
+
+                <div class="fantasma">
+                    <canvas id="pizarron">
+
+                    </canvas>
+                </div>
+            </div>
+
+
+            <div class="letras-descripcion">
+                <div id="desc" class="descripcion quicksand2">
+                </div>
+
+                <div id="guiones"  class="letras quicksand3">
+
+                </div>
+            </div>
+        </div>
+        <div id="contenedorBtns" class="todos-btns">
+            <div class="a-m">
+                <div><button class="quicksand rounded-4" id="a">A</button></div>
+                <div><button class="quicksand rounded-4" id="b">B</button></div>
+                <div><button class="quicksand rounded-4" id="c">C</button></div>
+                <div><button class="quicksand rounded-4" id="d">D</button></div>
+                <div><button class="quicksand rounded-4" id="e">E</button></div>
+                <div><button class="quicksand rounded-4" id="f">F</button></div>
+                <div><button class="quicksand rounded-4" id="g">G</button></div>
+                <div><button class="quicksand rounded-4" id="h">H</button></div>
+                <div><button class="quicksand rounded-4" id="i">I</button></div>
+                <div><button class="quicksand rounded-4" id="j">J</button></div>
+                <div><button class="quicksand rounded-4" id="k">K</button></div>
+                <div><button class="quicksand rounded-4" id="l">L</button></div>
+                <div><button class="quicksand rounded-4" id="m">M</button></div>
+            </div>
+            <div class="n-z">
+                <div><button class="quicksand rounded-4" id="n">N</button></div>
+                <div><button class="quicksand rounded-4" id="o">O</button></div>
+                <div><button class="quicksand rounded-4" id="p">P</button></div>
+                <div><button class="quicksand rounded-4" id="q">Q</button></div>
+                <div><button class="quicksand rounded-4" id="r">R</button></div>
+                <div><button class="quicksand rounded-4" id="s">S</button></div>
+                <div><button class="quicksand rounded-4" id="t">T</button></div>
+                <div><button class="quicksand rounded-4" id="u">U</button></div>
+                <div><button class="quicksand rounded-4" id="v">V</button></div>
+                <div><button class="quicksand rounded-4" id="w">W</button></div>
+                <div><button class="quicksand rounded-4" id="x">X</button></div>
+                <div><button class="quicksand rounded-4" id="y">Y</button></div>
+                <div><button class="quicksand rounded-4" id="z">Z</button></div>
+            </div>
+        </div>
+
+        <button id="guardar" class="quicksand2 rounded-4">Guardar</button>
+        <button id="continuar" class="rounded-4 quicksand2">Continuar</button>
+
+        <a href="./index.html"><button id="fin" class="rounded-4 quicksand2">Finalizar</button></a>
+
+        <script src="juego.js"></script>
+        <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
